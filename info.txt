@@ -1,0 +1,98 @@
+https://www.youtube.com/watch?v=HiXLkL42tMU&t=136s
+
+
+
+
+STATE y PROPS 
+
+- Por defecto solo los componentes de tipo class son los que pueden tener estado local (state)
+- Todos los componentes pueden recibir parametros (props) y se pasan en forma de JSX
+- Cada vez que el valor de un state o prop cambia, el componente que lo esté usando se va a volver a renderizar
+- El estado de un componente solo puede ser cambiado por aquel componente que lo creo
+- Los props no pueden ser cambiados, son de solo-lectura
+
+Componente({x:"Hola",y:"Chau"})
+
+
+<Componente x="Hola" y="Chau"/>
+
+
+DESTRUCTURING 
+
+let arr = [1,2,3]
+
+let [uno,dos] = arr
+
+let uno = arr[0]
+let dos = arr[1]
+let tres = arr[2]
+
+
+let obj = {x:1,y:2,z:3}
+
+let {x:uno,y:dos,z:tres} = obj
+let {x:x,y:y,z:z} = obj
+
+let {x,y,z} = obj
+
+let x = obj.x
+let y = obj.y
+let z = obj.z
+
+
+
+let arr = [1,2,3,4,5]
+
+arr.forEach((e,i)=>{}) : void
+
+
+arr.map((e,i)=>{}) : Array
+
+
+
+
+
+OPERADOR REST / SPREAD (...)
+
+
+let arr = [1,2,3]
+let copia = arr.slice(0)
+
+let copia = [...arr]
+
+
+function foo(...params){
+    console.log(params) //[1,2,3]
+}
+
+
+foo(1,2,3)
+
+
+
+
+
+
+
+
+
+
+
+
+SYMBOL
+PROTOCOLO ITERABLE - ITERATOR
+GENERATOR FUNCTION
+
+
+
+function foo(i){
+    this
+}
+
+
+let copia = foo.bind(null,i)
+
+
+
+PUBLICACION Y SUBSCRIPCION
+
